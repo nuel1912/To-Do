@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(-180deg, #f73710, #FF6B4E);
+    padding: 10px;
+    overflow: hidden;
+}
+
+.welcome {
+    color: #fff;
+    font-weight: 600;
+    font-size: 60px;
+    text-align: center;
+    /* letter-spacing: 1px; */
+}
+header p {
+    color: #f73710;
+    background: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 1px;
+    width: 25%;
+    margin: 15px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 45px;
+}
+.container {
+    color: #fff;
+    background: linear-gradient(rgba(247, 175, 162, 0.5), rgba(247,175,162,0.35));
+    width: 100%;
+    max-width: 750px;
+    margin: 0px auto 20px;
+    padding: 20px 50px 60px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+.container h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    /* letter-spacing: 1px; */
+}
+.row {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+    margin: 15px 0;
+}
+.row input {
+    flex: 1;
+    width: 100%;
+    color: #f73710;
+    background: transparent;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    letter-spacing: 1px;
+}
+::placeholder {
+    color: #afaeae;
+    font-weight: 500;
+}
+#todo {
+    color: #fff;
+    background: #FF6B4E;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 15px 20px;
+    border: 2px solid #fff;
+    border-radius: 60px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.8s;
+}
+#todo:hover {
+    background-color: #fa4d2b;
+}
+
+/* User's part... */
+.users {
+    text-align: center;
+}
+.users button {
+    color: #fff;
+    background: #FF6B4E;
+    height: 45px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    margin: 25px auto 0;
+    border: 1px solid #fff;
+    border-radius: 60px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.8s;
+}
+.users button:hover {
+    background-color: #fa4d2b;
+}
+
+/* List Part... */
+ul li {
+    position: relative;
+    user-select: none;
+    list-style: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+ul li::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    left: 8px;
+    background: #f7bdb1;
+    font-weight: 900;
+    letter-spacing: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+ul li.check {
+    color: #6e1605;
+    text-decoration: line-through;
+}
+ul li.check::before {
+    background: #6e1605;
+}
+ul li button {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 8px;
+    right: 10px;
+    color: #f73710;
+    background: #f7bdb1;
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-align: center;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+ul li button:hover {
+    color: #f7bdb1;
+    background: #f73710;
+    font-weight: 700;
+}
