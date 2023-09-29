@@ -67,12 +67,13 @@ function hello() {
 //Yeahhh, testimg objects and passing it into a function...
 function pass() {
     let person = {
-        name: prompt("Enter your name..."),
-        age: 20,
-        identity: "Child of God"
+        names: prompt("Your name?"),
+        age: prompt("Your age?"),
+        gender: prompt("Your gender?"),
+        favouriteColor: prompt("Your favourite color?")
     }
     
-    alert(person.name);
+    alert(`So your name is ${person.names} and you're ${person.age} years old being of ${person.gender} gender and ${person.favouriteColor} being your favourite color`);
 }
 
 // pass();

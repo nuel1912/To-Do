@@ -7,7 +7,7 @@
 }
 
 header {
-    max-width: 100vw;
+max-width: 100vw;
     min-height: 100vh;
     background: linear-gradient(-180deg, #f73710, #FF6B4E);
     padding: 10px;
@@ -96,6 +96,8 @@ header p {
 /* User's part... */
 .users {
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 .users button {
     color: #fff;
@@ -105,7 +107,7 @@ header p {
     font-weight: 600;
     letter-spacing: 1px;
     padding: 5px 10px;
-    margin: 20px auto 0;
+    margin: 20px 5px 0;
     border: 1px solid #fff;
     border-radius: 60px;
     outline: none;
