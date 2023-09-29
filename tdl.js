@@ -73,7 +73,9 @@ function pass() {
         favouriteColor: prompt("Your favourite color?")
     }
     
-    alert(`So your name is ${person.names} and you're ${person.age} years old being of ${person.gender} gender and ${person.favouriteColor} being your favourite color`);
+    let details = `So your name is ${person.names} and you're ${person.age} years old being of ${person.gender} gender and ${person.favouriteColor} being your favourite color`
+
+    document.getElementById("person").textContent = details;
 }
 
 // pass();
