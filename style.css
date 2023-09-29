@@ -45,7 +45,7 @@ header p {
     text-align: center;
     border-bottom: 1px solid #fff;
 }
-.container h2 {
+#hello {
     font-size: 40px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -117,13 +117,13 @@ header p {
 
 /* List Part... */
 ul li {
-    position: relative;
-    user-select: none;
-    list-style: none;
     color: #fff;
     font-size: 18px;
     font-weight: 700;
     text-align: left;
+    position: relative;
+    user-select: none;
+    list-style: none;
     padding: 10px 50px;
     display: flex;
     justify-content: space-between;
@@ -170,4 +170,18 @@ ul li button:hover {
     color: #f7bdb1;
     background: #f73710;
     font-weight: 700;
+}
+
+
+@media (max-width:768px) {
+    header p {
+        width: 80%;
+    }
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #hello {
+        font-size: 30px;
+    }
 }
